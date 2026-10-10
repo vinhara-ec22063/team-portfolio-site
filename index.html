@@ -9,13 +9,80 @@
 </head>
 <body>
 
-  <!-- MEMBER 4: HEADER goes here -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">TeamCode</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">C</button>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <!-- MEMBER 1: PAGE CONTENT (sections) goes here -->
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <h1>We build things, <span>with</span></h1>
+        <p class="hero-text">A four-member team learning Full-Stack Software Development with Git &amp; GitHub collaboration.</p>
+        <a class="button" href="#team">Meet the team</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+            <h2>About the Project</h2>
+        </div>
+          <div class="project-grid">
+            <article><h3>HTML</h3><p>Semantic structure for the whole page.</p></article>
+            <article><h3>CSS</h3><p>Responsive layout, colours and dark mode.</p></article>
+            <article><h3>JavaScript</h3><p>Interactivity: menu, theme, form checks.</p></article>
+          </div>
+      </div>
+    </section>
+
+    <section id="team" class="section section-muted">
+      <div class="container">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+          <article class="team-card"><div class="avatar">M1</div><h3>Member 1</h3><p>HTML Developer</p></article>
+          <article class="team-card"><div class="avatar">M2</div><h3>Member 2</h3><p>CSS Developer</p></article>
+          <article class="team-card"><div class="avatar">M3</div><h3>Member 3</h3><p>JavaScript Developer</p></article>
+          <article class="team-card"><div class="avatar">M4</div><h3>Member 4</h3><p>Header &amp; Footer Developer</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-layout">
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button class="button" type="submit">Send message</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- MEMBER 4: FOOTER goes here -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 TeamCode. All rights reserved.</p>
+      <p>CSCI 32133 / BICS 32263 - University of Kelaniya</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
