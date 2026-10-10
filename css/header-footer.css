@@ -1,1 +1,20 @@
-/* MEMBER 4: header, navigation and footer styles */
+.site-header { position: sticky; top: 0; z-index: 10; background: var(--surface); border-bottom: 1px solid var(--border); }
+.nav-wrap, .footer-content { display: flex; align-items: center; justify-content: space-between; min-height: 70px; }
+.logo { color: var(--text); font: 700 1.4rem Arial, sans-serif; text-decoration: none; }
+.logo span { color: var(--accent); }
+.site-nav { display: flex; align-items: center; gap: 24px; }
+.nav-link, .theme-toggle, .menu-toggle { color: var(--text); font: 0.9rem Arial, sans-serif; }
+.nav-link { text-decoration: none; }
+.nav-link:hover, .nav-link.active { color: var(--accent); }
+.theme-toggle, .menu-toggle { border: 1px solid var(--border); padding: 8px 12px; background: transparent; cursor: pointer; }
+.menu-toggle { display: none; }
+.site-footer { background: #17221b; color: #f1f4ed; }
+.footer-content { min-height: 90px; font: 0.85rem Arial, sans-serif; }
+.footer-content p { margin: 0; }
+@media (max-width: 760px) {
+	.menu-toggle { display: block; }
+	.site-nav { position: absolute; top: 70px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px 20px; background: var(--surface); border-bottom: 1px solid var(--border); }
+	.site-nav.open { display: flex; }
+	.nav-link, .theme-toggle { padding: 10px 0; text-align: left; }
+	.footer-content { align-items: flex-start; flex-direction: column; justify-content: center; }
+}
