@@ -1,16 +1,16 @@
-.site-header { position: sticky; top: 0; z-index: 10; background: var(--surface); border-bottom: 1px solid var(--border); }
-.nav-wrap, .footer-content { display: flex; align-items: center; justify-content: space-between; min-height: 70px; }
-.logo { color: var(--text); font: 700 1.4rem Arial, sans-serif; text-decoration: none; }
-.logo span { color: var(--accent); }
-.site-nav { display: flex; align-items: center; gap: 24px; }
-.nav-link, .theme-toggle, .menu-toggle { color: var(--text); font: 0.9rem Arial, sans-serif; }
+.site-header { position: sticky; top: 0; z-index: 10; background: var(--accent); }
+.nav-wrap, .footer-content { display: flex; align-items: center; justify-content: space-between; min-height: 38px; }
+.logo { color: #fff; font: 700 11px Arial, sans-serif; text-decoration: none; }
+.site-nav { display: flex; align-items: center; gap: 12px; }
+.nav-link, .theme-toggle, .menu-toggle { color: #fff; font: 12px Arial, sans-serif; }
 .nav-link { text-decoration: none; }
-.nav-link:hover, .nav-link.active { color: var(--accent); }
-.theme-toggle, .menu-toggle { border: 1px solid var(--border); padding: 8px 12px; background: transparent; cursor: pointer; }
+.nav-link:hover, .nav-link.active { color: #ddd0f4; }
+.theme-toggle, .menu-toggle { border: 1px solid #bba5dc; padding: 3px 6px; background: transparent; cursor: pointer; }
 .menu-toggle { display: none; }
-.site-footer { background: #17221b; color: #f1f4ed; }
-.footer-content { min-height: 90px; font: 0.85rem Arial, sans-serif; }
+.site-footer { background: #202236; color: #f1f4ed; }
+.footer-content { min-height: 65px; flex-direction: column; justify-content: center; gap: 2px; font: 8px Arial, sans-serif; }
 .footer-content p { margin: 0; }
+.footer-content a { color: #ddd0f4; }
 @media (max-width: 760px) {
 	.menu-toggle { display: block; }
 	.site-nav { position: absolute; top: 70px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px 20px; background: var(--surface); border-bottom: 1px solid var(--border); }
